@@ -1,6 +1,6 @@
 # AMA
 
-**what is foobar?**
+### what is foobar?
 
 - Foo" and "bar" as metasyntactic variables were popularised by MIT and DEC, the first references are in work on LISP and PDP-1 and Project MAC from 1964 onwards.
 
@@ -12,7 +12,7 @@ Also, it seems likely the military FUBAR contributed to their popularity.
 - FUBAR : Fucked/Fouled Up Beyond All Recoginition/Repair - Military Slang
 
 
-**what is Database Sharding?**
+### what is Database Sharding?
 
 Any application or website that sees significant growth will eventually need to scale in order to accommodate increases in traffic.
 
@@ -31,7 +31,7 @@ Each **partition has the same schema and columns**, but also **entirely differen
 - Collection of theses **Logical shards**
 
 
-### Benefits
+#### Benefits
 
 
 
