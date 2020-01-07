@@ -102,6 +102,17 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
  - **3NF**
  - **Boyce-Codd NF**
 
+### What Cross Join in SQL?
+- In SQL, the **CROSS JOIN** is used to combine each row of the first table with each row of the second table. It is also known as the **Cartesian join** since it returns the Cartesian product of the sets of rows from the joined tables.
+
+
+### What schema (in databases)?
+**Schema** is the blueprint of the database.
+
+- A database schema represents the **logical configuration of all or part of a relational database.**
+
+- It can exist both as a **visual representation** and as a **set of formulas known as integrity constraints** that govern a database.
+
 ### What are Self invoking function (in javascript)?
 - A **self-invoking** (also called self-executing) function is a **nameless (anonymous)** function that is **invoked immediately after its definition.**
 
@@ -119,13 +130,6 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 	console.log(welcomeMessage);
 })("Welcome to the World of Asynchornous Programming!");
 ```
-
-### What schema (in databases)?
-**Schema** is the blueprint of the database.
-
-- A database schema represents the **logical configuration of all or part of a relational database.**
-
-- It can exist both as a **visual representation** and as a **set of formulas known as integrity constraints** that govern a database.
 
 ### What is Morgan (node package) use for?
 - Morgan is used for **access log**.
