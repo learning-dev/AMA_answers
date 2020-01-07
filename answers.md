@@ -85,3 +85,6 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 ### What is Normalization (in Database)?
 
 - It is the processes of reducing the redundancy of data in the table and also improving the data integrity
+
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/normalization.png "Database Normalization")
