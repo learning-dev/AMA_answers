@@ -1,6 +1,6 @@
 # AMA
 
-### what is foobar?
+### What is foobar?
 
 - Foo" and "bar" as metasyntactic variables were popularised by MIT and DEC, the first references are in work on LISP and PDP-1 and Project MAC from 1964 onwards.
 
@@ -12,7 +12,7 @@ Also, it seems likely the military FUBAR contributed to their popularity.
 - FUBAR : Fucked/Fouled Up Beyond All Recoginition/Repair - Military Slang
 
 
-### what is Database Sharding?
+### What is Database Sharding?
 
 Any application or website that sees significant growth will eventually need to scale in order to accommodate increases in traffic.
 
@@ -87,4 +87,18 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 - It is the processes of reducing the redundancy of data in the table and also improving the data integrity
 
 
+**Without normaliztion**
+
+- Repetition of data increases the size of database.
+- creates difficulty in reading, updating and creating new records.
+
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/normalization.png "Database Normalization")
+
+
+#### Database Normalization Rules
+
+ - **1NF**
+ - **2NF**
+ - **3NF**
+ - **Boyce-Codd NF**
+
