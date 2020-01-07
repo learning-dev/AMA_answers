@@ -80,3 +80,8 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 #### Directory Based Sharding
 
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/directory_based_shard.png "Directory based Database Sharding")
+
+
+### What is Normalization (in Database)?
+
+- It is the processes of reducing the redundancy of data in the table and also improving the data integrity
