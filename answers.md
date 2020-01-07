@@ -31,7 +31,22 @@ Each **partition has the same schema and columns**, but also **entirely differen
 - Collection of theses **Logical shards**
 
 
+#### Horizontal Scaling
+- **Horizontal scaling** is the practice of adding more machines to an existing stack in order to spread out the load and allow for more traffic and faster processing.
+
+#### Vertical scaling
+- **Vertical Scaling** also known as **Scaling in** which involves upgrading the hardware of an existing server, usually by adding more RAM or CPU.
+
+
 #### Benefits
+- The main appeal of sharding a database is that it can help to facilitate **horizontal scaling**, also known as **scaling out**.
+
+- It’s relatively simple to have a relational database running on a single machine and scale it up as necessary by upgrading its computing resources.
+
+- Database sharding speeds up the query response time. When you are querying un-sharded database then it will search through each and every row of the database before it can display the result
+
+- Sharding makes the application more reliable. When there is outage in the non-sharded database, it can make whole application unavailable. On the other hand, only some part of application will be unavaible in case Database sharding. The overall impact will be less than if entire database crashed.
+
 
 
 
