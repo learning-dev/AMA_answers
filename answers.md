@@ -69,9 +69,13 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/key_based_shard.png "Key based Database Sharding")
 
+
+
 #### Range Based Sharding
 
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/range_based_shard.png "range based Database Sharding")
+
+
 
 #### Directory Based Sharding
 
