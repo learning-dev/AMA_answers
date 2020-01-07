@@ -120,6 +120,13 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 })("Welcome to the World of Asynchornous Programming!");
 ```
 
+### What schema (in databases)?
+**Schema** is the blueprint of the database.
+
+- A database schema represents the **logical configuration of all or part of a relational database.**
+
+- It can exist both as a **visual representation** and as a **set of formulas known as integrity constraints** that govern a database.
+
 ### What is Morgan (node package) use for?
 - Morgan is used for **access log**.
 
