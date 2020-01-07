@@ -102,6 +102,23 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
  - **3NF**
  - **Boyce-Codd NF**
 
+### What are Self invoking function (in javascript)?
+- A **self-invoking** (also called self-executing) function is a **nameless (anonymous)** function that is **invoked immediately after its definition.**
+
+
+**Example**
+```javascript
+(function(){
+	console.log(Math.PI);
+})();
+```
+#### passing parameters inside the self-invoking functions
+
+``` javascript
+(function(welcomeMessage){
+	console.log(welcomeMessage);
+})("Welcome to the World of Asynchornous Programming!");
+```
 
 ### What is Morgan (node package) use for?
 - Morgan is used for **access log**.
