@@ -102,6 +102,19 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
  - **3NF**
  - **Boyce-Codd NF**
 
+### How will you iterate over document.getElementsByClassName?
+ - It returns a HTMLCollection (type). You will have to use
+
+ ```javascript
+ let elements = document.getElementsByClassName('card-div');
+Array.from(elements).forEach((ele) => {
+    // Do stuff here
+    console.log(ele.tagName);
+});
+// you can also use elementIndex - 0, 1, 2
+elements.item(elementIndex)
+```
+
 ### What Cross Join in SQL?
 - In SQL, the **CROSS JOIN** is used to combine each row of the first table with each row of the second table. It is also known as the **Cartesian join** since it returns the Cartesian product of the sets of rows from the joined tables.
 
