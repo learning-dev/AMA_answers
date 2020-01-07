@@ -102,6 +102,20 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
  - **3NF**
  - **Boyce-Codd NF**
 
+### What is Deadlocks in Database?
+- In a database, a deadlock is a situation in which two or more transactions are waiting for one another to give up locks.
+
+- **For example,**
+ **Transaction A** might hold a lock on some rows in the Accounts table and needs to update some rows in the Orders table to finish.
+- **Transaction B** holds locks on those very rows in the Orders table but needs to update the rows in the Accounts table held by Transaction A.
+- Transaction A cannot complete its transaction because of the lock on Orders. Transaction B cannot complete its transaction because of the lock on Accounts.
+- All activity comes to a halt and remains at a standstill forever unless the DBMS detects the deadlock and aborts one of the transactions.
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/deadlock.gif "Deadlock in database visualization")
+
+
+
+
 ### How will you iterate over document.getElementsByClassName?
  - It returns a HTMLCollection (type). You will have to use
 
@@ -120,7 +134,7 @@ elements.length;
 // Array.from() Returns a shallow copy of the elements
 ```
 
-### What Cross Join in SQL?
+### What is Cross Join in SQL?
 - In SQL, the **CROSS JOIN** is used to combine each row of the first table with each row of the second table. It is also known as the **Cartesian join** since it returns the Cartesian product of the sets of rows from the joined tables.
 
 
