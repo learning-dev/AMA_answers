@@ -65,14 +65,14 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 
 #### Types of Shards
 
-##### Key Based Sharding
+#### Key Based Sharding
 
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/key_based_shard.png "Key based Database Sharding")
 
-##### Range Based Sharding
+#### Range Based Sharding
 
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/range_based_shard.png "range based Database Sharding")
 
-##### Directory Based Sharding
+#### Directory Based Sharding
 
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/directory_based_shard.png "Directory based Database Sharding")
