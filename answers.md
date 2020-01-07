@@ -47,6 +47,17 @@ Each **partition has the same schema and columns**, but also **entirely differen
 
 - Sharding makes the application more reliable. When there is outage in the non-sharded database, it can make whole application unavailable. On the other hand, only some part of application will be unavaible in case Database sharding. The overall impact will be less than if entire database crashed.
 
+#### Drawbacks of Sharding
+
+-  If Sharding is **done incorrectly**, there’s a significant **risk that the sharding process can lead to lost data or corrupted tables.**
+
+- Even if done correctly, there is **significant change in the workflow of teams.** Sometimes it distrupts the whole flow of a team i.e Rather than accessing and managing one’s data from a single entry point, users must manage data across multiple shard locations
+
+- **Shards Becoming Unbalanced**. Let's say you have a databases that has two shards. One shards contains the names of customers Starting with 'A' to 'M', the other one with 'N' to 'Z'. One with 'A' to 'M' has more records than 'N' to 'Z'. Which can slow down application while querying shard with more records.
+Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benefit of sharding. The **database would likely need to be repaired and resharded** to allow **for a more even data distribution**.
+
+- Finally, **sharding isn’t natively supported by every database engine.** For instance, **PostgreSQL does not include automatic sharding as a feature**, although it is **possible to manually shard a PostgreSQL database.**
+
 
 
 
