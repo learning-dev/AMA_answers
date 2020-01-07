@@ -102,3 +102,7 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
  - **3NF**
  - **Boyce-Codd NF**
 
+
+### What is Morgan (node package) use for?
+- Morgan is used for **access log**.
+
