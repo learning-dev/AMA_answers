@@ -31,6 +31,9 @@ Each **partition has the same schema and columns**, but also **entirely differen
 - Collection of theses **Logical shards**
 
 
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/db_partioning.png "Database Sharding")
+
+
 #### Horizontal Scaling
 - **Horizontal scaling** is the practice of adding more machines to an existing stack in order to spread out the load and allow for more traffic and faster processing.
 
