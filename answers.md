@@ -112,7 +112,12 @@ Array.from(elements).forEach((ele) => {
     console.log(ele.tagName);
 });
 // you can also use elementIndex - 0, 1, 2
-elements.item(elementIndex)
+elements.item(elementIndex);
+
+// .length to get length of the HTML collection
+elements.length;
+
+// Array.from() Returns a shallow copy of the elements
 ```
 
 ### What Cross Join in SQL?
