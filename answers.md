@@ -166,3 +166,30 @@ elements.length;
 ### What is Morgan (node package) use for?
 - Morgan is used for **access log**.
 
+### What is DFA (Definite Finite Automata)?
+
+#### Finite State Machine
+ -  Finite State Machine is a **mathematical model of computation**. It is an **abstract machine** that can be in exactly one of a finite number of states at any given time.
+
+
+ - The FSM can **change from one state to another** in response to **some external inputs** and/or a condition is satisfied; the **change from one state to another** is called a **transition**
+
+
+ **Example**
+
+ - Turn site in metros
+	![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/turn.jpg "turnsite in metros")
+
+- **State Machine**
+
+- ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/simple_state_machine.png "simple state machine")
+
+- **States Table**
+- ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/states_table.png "states in machine")
+
+#### Deterministic Finite Automaton
+
+- DFA is a finite-state machine that **accepts or rejects** a given string of symbols, by **running through a state sequence uniquely** determined by the string.
+
+
+
