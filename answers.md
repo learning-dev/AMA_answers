@@ -82,26 +82,6 @@ Shard with names 'A' to 'M' becomes the **hotspot**, which cancels out the benef
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/directory_based_shard.png "Directory based Database Sharding")
 
 
-### What is Normalization (in Database)?
-
-- It is the processes of reducing the redundancy of data in the table and also improving the data integrity
-
-
-**Without normaliztion**
-
-- Repetition of data increases the size of database.
-- creates difficulty in reading, updating and creating new records.
-
-![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/normalization.png "Database Normalization")
-
-
-#### Database Normalization Rules
-
- - **1NF**
- - **2NF**
- - **3NF**
- - **Boyce-Codd NF**
-
 ### What is Deadlocks in Database?
 - In a database, a deadlock is a situation in which two or more transactions are waiting for one another to give up locks.
 
@@ -182,19 +162,92 @@ elements.length;
 
 - **State Machine**
 
-- ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/simple_state_machine.png "simple state machine")
-
-
-
-
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/simple_state_machine.png "simple state machine")
 
 
 - **States Table**
-- ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/states_table.png "states in machine")
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/states_table.png "states in machine")
 
 #### Deterministic Finite Automaton
 
 - DFA is a finite-state machine that **accepts or rejects** a given string of symbols, by **running through a state sequence uniquely** determined by the string.
 
+### What is Normalization (in Database)?
+
+- It is the processes of reducing the redundancy of data in the table and also improving the data integrity
 
 
+**Without normaliztion**
+
+- Repetition of data increases the size of database.
+- creates difficulty in reading, updating and creating new records.
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/normalization.png "Database Normalization")
+
+
+#### Database Normalization Rules
+
+ - **1NF**
+ - **2NF**
+ - **3NF**
+ - **Boyce-Codd NF**
+
+
+#### 1NF
+
+- In this Normal Form, **we tackle the problem of atomicity**. Here, atomicity means **values in the table should not be further divided.**
+
+- In simple terms, a single cell cannot hold multiple values. If a table contains a composite or multi-valued attribute, it violates the First Normal Form.
+
+- **For Example**
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/1NF-first.png "1NF first")
+
+- In the above table, we can clearly see that the Phone Number column has two values. Thus it violated the 1st NF. Now if we apply the 1st NF to the above table we get the below table as the result.
+
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/1NF-second.png "1NF second")
+
+- By this, we have achieved atomicity and also each and every column have unique values.
+
+#### 2NF
+
+- Everything that is in **1NF** plus table also should **not** contain **partial dependency**. Here, partial dependency means the proper subset of candidate key determines a non-prime attribute.
+
+
+- **For Example**
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/2NF-first.png "2NF first")
+
+- This table has a **composite primary key Emplyoee ID, Department ID.** The non-key attribute is Office Location. In this case, Office Location only depends on Department ID, which is only part of the primary key. Therefore, this table does not satisfy the second Normal Form.
+
+
+- ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/2NF-second.png "2NF second")
+
+- we have removed the partial functional dependency that we initially had. Now, in the table, **the column Office Location is fully dependent on the primary key** of that table, which is **Department ID**.
+
+
+#### 3NF
+
+- In 3NF, It should satisfy all the condition of 1NF, 2NF plus eliminate **transitive dependency**
+
+- A transitive dependency in a database is an **indirect relationship between values in the same table** that causes a functional dependency.
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/3NF-first.png "3NF first")
+
+- **Book -> Author**
+
+- **Author -> Author_Nationality**
+
+- **Book -> Author_Nationality** - This contains Transitive Dependency. If we know the book name, we can determine the nationality via the Author column.
+
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/3NF-second.png "3NF second")
+
+- **Author_ID  → Author**
+
+- **Author → Author_Nationality**
+
+- **Author_ID → Author_Nationality**: The nationality can be determined from the Author_ID through the Author attribute. We still have a transitive dependency.
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/3NF-third.png "3NF third")
