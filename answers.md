@@ -252,3 +252,27 @@ elements.length;
 - **Author_ID → Author_Nationality**: The nationality can be determined from the Author_ID through the Author attribute. We still have a transitive dependency.
 
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/3NF-third.png "3NF third")
+
+- Is it really worth it? 3NF?
+
+- if you add a book, you need to know nationality of Author?
+
+- If Author changes the Nationality, Do we really have to change the Records in Books Table?
+
+
+#### Boyce–Codd Normal form (3.5NF)
+
+- Everthing in **3NF** plus There should be only **ONE** Primary Key in a Table. i.e there can be only one super key.
+
+- **For Example**
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/BCNF-first.png "BCNF first")
+
+Here, primary key is a combination of StudentID and subject. This can be broken down into
+
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/BCNF-second.png "BCNF second")
+
+
+![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/BCNF-third.png "BCNF third")
+
