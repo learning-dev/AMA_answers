@@ -262,7 +262,9 @@ elements.length;
 
 #### Boyce–Codd Normal form (3.5NF)
 
-- Everthing in **3NF** plus There should be only **ONE** Primary Key in a Table. i.e there can be only one super key.
+- Everthing in **3NF** plus There should be only **ONE** for any dependency A → B, A should be a super key.
+
+- Also , for a dependency A → B, A cannot be a non-prime attribute, if B is a prime attribute.
 
 - **For Example**
 
