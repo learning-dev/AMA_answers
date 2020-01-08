@@ -178,7 +178,7 @@ elements.length;
  **Example**
 
  - Turn site in metros
-	![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/turn.jpg "turnsite in metros")
+	![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/turnesite.jpg "turnsite in metros")
 
 - **State Machine**
 
