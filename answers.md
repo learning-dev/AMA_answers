@@ -166,6 +166,7 @@ elements.length;
 
 
 - **States Table**
+
 ![alt text](https://github.com/learning-dev/AMA_answers/blob/master/images/states_table.png "states in machine")
 
 #### Deterministic Finite Automaton
